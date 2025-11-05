@@ -1,0 +1,53 @@
+
+# Northwind database
+
+This is an extended version of the Northwind database  (from w3schools)
+
+
+De NorthWindDB op w3schools is enkel leesbaar.
+Commando's zoals:
+- INSERT INTO
+- UPDATE
+- DELETE FROM
+zijn jammergenoeg niet mogelijk online bij w3schools.
+Daarom is deze code beschikbaar gezet.
+
+
+
+
+## 1. Hoe installeer je dit?
+
+
+Je hebt toegang tot een Linuxsysteem (vb Raspberry Pi) met mariadb
+Root-gebruiker van database en paswoord is gekend.
+
+
+
+## 2. Voer volgende commando's uit op je Linuxsysteem:
+
+cd
+
+git clone https://github.com/jmo2300/NorthWindDB3/
+
+cd NorthWindDB3
+
+sudo mysql -u root -p < NorthWind1.sql
+
+mysql -u northwind -pnorthwindpw < NorthWind2tabels.sql
+
+
+
+## 3. Vanaf nu is NorthWindDatabase beschikbaar:
+
+mysql -u northwind -p
+
+SHOW DATABASES;
+
+USE w3schoolsDB;
+
+SHOW TABLES;
+
+SELECT * FROM customers;
+
+
+
